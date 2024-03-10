@@ -1,0 +1,7 @@
+# delay between messages in seconds
+delay-time: 10
+messages-to-display:
+  - "test"
+  - "test 2"
+  - "<red>Test in color</red>"
+  - "<gradient:red:dark_blue>other test in color</gradient>"

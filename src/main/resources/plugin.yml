@@ -1,0 +1,27 @@
+name: SimpleScheduledMessages
+version: '${project.version}'
+main: simplexity.simplescheduledmessages.SimpleScheduledMessages
+api-version: '1.20'
+commands:
+  smreload:
+    permission: "messages.reload"
+    description: "Allows the user to reload the configs"
+  messages:
+    permission: "messages.toggle"
+    description: "Allows the user to pause/resume auto-messages"
+  broadcastmsg:
+    permission: "messages.broadcast"
+    description: "Allows the user to send a message to the whole server"
+permissions:
+  messages:
+    default: op
+    description: "Allows base functionality"
+  messages.reload:
+    default: op
+    description: "Allows reloading the plugin"
+  messages.toggle:
+    default: op
+    description: "Allows toggling auto-messages on/off"
+  messages.broadcast:
+    default: op
+    description: "Allows sending a message to the server"

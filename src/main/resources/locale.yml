@@ -1,0 +1,13 @@
+command-feedback:
+  pause-state: "<gray>Scheduled messages are currently <state></gray>"
+  paused: "<gray>Scheduled messages are now paused</gray>"
+  resumed: "<green>Scheduled messages have been resumed</green>"
+  config-reloaded: "<gold>SimpleScheduledMessages config has been reloaded"
+inserts:
+  paused: "<yellow>paused</yellow>"
+  running: "<green>running</green>"
+  broadcast-prefix: "<bold><red>[</red></bold><gold>!!</gold><bold><red>]</red></bold> "
+  message-prefix: "<aqua>[<white>Server</white>]</aqua> "
+errors:
+  unknown-command: "<red>Unknown command</red>"
+  provide-message: "<red>Please provide a message to broadcast</red>"
