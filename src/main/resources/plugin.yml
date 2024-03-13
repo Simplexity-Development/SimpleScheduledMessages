@@ -6,7 +6,7 @@ commands:
   smreload:
     permission: "messages.reload"
     description: "Allows the user to reload the configs"
-  messages:
+  automessage:
     permission: "messages.toggle"
     description: "Allows the user to pause/resume auto-messages"
   broadcastmsg:

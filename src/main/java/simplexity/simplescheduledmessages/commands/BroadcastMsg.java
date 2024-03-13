@@ -10,7 +10,7 @@ import simplexity.simplescheduledmessages.configs.LocaleHandler;
 
 import java.util.List;
 
-public class BroadcastMsgCommand implements TabExecutor {
+public class BroadcastMsg implements TabExecutor {
     
     
     @Override

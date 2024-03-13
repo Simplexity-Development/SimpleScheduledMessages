@@ -13,7 +13,7 @@ import simplexity.simplescheduledmessages.configs.LocaleHandler;
 
 import java.util.List;
 
-public class MessagesCommand implements TabExecutor {
+public class AutoMessage implements TabExecutor {
     
     MiniMessage miniMessage = SimpleScheduledMessages.getMiniMessage();
     private final String pausedInsert = LocaleHandler.getInstance().getInsertPaused();
