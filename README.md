@@ -3,6 +3,8 @@ A basic plugin that allows you to configure messages that will cycle in order wi
 
 These messages use [MiniMessage Formatting](https://webui.advntr.dev/) and can be very basic or very complex.
 
+Also allows admins to send server broadcasts with `/broadcastmsg <message>` that also use minimessage formatting. 
+It is recommended to only give this permission to trusted users, as minimessage can be used to run commands and open urls
 
 | Command               | Permission         | Description                                           |
 |-----------------------|--------------------|-------------------------------------------------------|
