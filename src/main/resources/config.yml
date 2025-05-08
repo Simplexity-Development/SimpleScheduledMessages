@@ -1,4 +1,4 @@
-# delay between messages in seconds
+# delay between messages in seconds, -1 to disable completely
 delay-time: 10
 messages-to-display:
   - "test"

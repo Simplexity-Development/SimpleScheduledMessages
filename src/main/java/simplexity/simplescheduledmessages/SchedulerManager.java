@@ -28,6 +28,7 @@ public class SchedulerManager {
     public void startScheduler() {
         BukkitScheduler scheduler = SimpleScheduledMessages.getInstance().getServer().getScheduler();
         if (task != null && !task.isCancelled()) task.cancel();
+        if (ConfigHandler.getDelayTime() == -1) return;
         task = scheduler.runTaskTimer(SimpleScheduledMessages.getInstance(), this::displayMessage, 0L,
                 (ConfigHandler.getDelayTime() * 20L));
     }

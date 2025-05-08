@@ -9,18 +9,21 @@ import java.util.List;
 public class ConfigHandler {
     private static final ArrayList<String> scheduledMessages = new ArrayList<>();
     private static int delayTime;
-    public static void updateConfigValues(){
+
+    public static void updateConfigValues() {
         FileConfiguration config = SimpleScheduledMessages.getInstance().getConfig();
         scheduledMessages.clear();
         List<String> messages = config.getStringList("messages-to-display");
         delayTime = config.getInt("delay-time");
-        scheduledMessages.addAll(messages);
+        if (!messages.isEmpty()) {
+            scheduledMessages.addAll(messages);
+        }
     }
-    
-    public static ArrayList<String> getScheduledMessages(){
+
+    public static ArrayList<String> getScheduledMessages() {
         return scheduledMessages;
     }
-    
+
     public static int getDelayTime() {
         return delayTime;
     }
